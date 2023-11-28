@@ -11,13 +11,29 @@ video {
   display: block;
 }
 
+body {
+  background-color: #dc7257;
+}
+
 h1,
 h2,
 h3 {
   font-family: "Modak";
   color: #d84d2e;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: White;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+}
+
+#Billeder,
+#Videoer {
+  margin: 10px;
 }
 
 /* Menu */
@@ -58,6 +74,11 @@ a:hover {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 }
